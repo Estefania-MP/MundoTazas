@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.App {
+  max-width: 1550px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px #CCAAD4;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* ------------------------ HEADER -----------------------------*/
+
+header{
+  width: 97%;
+  min-height: 100px;
+  max-width: 1530px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  box-sizing: border-box;
+  background-color:#CCAAD4;
+  box-shadow: 0 5px 10px #CCAAD4;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:hover{
+  color: #9f8bb5;
+}
+li{
+  list-style: none;
+}
+header ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+header ul li{
+  padding:0 1rem;
+}
+header ul li a{
+  font-weight: bold;
+}
+header .cart{
+  position: relative;
+  cursor: pointer;
+} 
+header .cart box-icon{
+  width: 21px;
+  height: 20px;
+}
+header .cart span {
+  position: absolute;
+  top: -0.7rem;
+  right: -1.5rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #9f8bb5;
+}
+/*-----------------------PRODUCTOS ----------------------*/
+.title {
+  font-size: 2rem;
+  padding: 10rem 0 0 0;
+  color: #9f8bb5;
+}
+.productos{
+  padding: 5rem 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 3rem 2rem;
+  box-sizing: border-box;
+}
+.producto{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px, 10px, 10px, 2px, rgba(0, 0, 0. .2);
+  border: 6px solid transparent;
+  border-radius: 5px;
+}
+.producto:hover{
+  border: 6px solid #CCAAD4;
+}
+.producto__img img{
+width: 310px;
+}
+.producto__footer{
+  padding: 1rem;
+}
+.producto__footer h1{
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #9f8bb5;
+  font-family: helvetica, sans-serif;
+}
+.producto__footer p{
+  font-weight: 700px;
+  color: rgba(0, 0, 0, .555);
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.producto__footer .price{
+  font-size: 2rem;
+  color: #856E8A;
+}
+.producto .buttom{
+  width: 100%;
+  height: 45px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem 3rem;
+}
+.buttom .btn{
+border: none;
+outline: 0;
+cursor: pointer;
+border-radius: 5px;
+}
+.buttom button {
+  background-color: #C6E1FF;
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 600;
+}
+.buttom div {
+  background-color: #CCAAD4;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  margin-left: -2rem;
+  border-radius: 5px;
+}
+.buttom div a{
+  color: white;
+  font-weight: 700;
+}
+.butom div a:hover{
+  color: white;
+}
+.vision box-icon{
+  display: grid;
+  align-items: center;
+  margin-left: 4rem;
+}
+
+.counter{
+  background-color: #C6E1FF;
+  max-width: 150px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 600;
+}
+
+
+/*---------------------- MEDIA --------------------------*/
+
+@media only screen and (max-width: 600px){
+  header ul{
+    display: none;
+  }
+}
