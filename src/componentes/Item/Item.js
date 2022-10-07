@@ -22,7 +22,7 @@ return(
                  Añadir al carrito
              </button>
              <div className='vision'>
-             <Link to={`/detalles/${Productos.id}`} className='btn'>Ver</Link>
+             <Link to={`/detalles/${info.id}`} className='btn'>Ver</Link>
              <box-icon name='low-vision' color='#ffffff' animation='flashing'></box-icon>
              </div>
          </div>
