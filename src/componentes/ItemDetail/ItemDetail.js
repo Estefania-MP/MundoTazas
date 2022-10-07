@@ -1,21 +1,32 @@
 import React from 'react';
+import Productos from "../Productos/Productos.json";
 
 
+export const ItemDetail = () => {
 
-export const ItemDetail = ({data}) => {
-    return (
-      <div className='productos' >
-       <div className='producto' >
-        <div className='producto__img' >
-        <img  src={data.image} alt='' />
-        </div>
-         <div className='producto__footer' >
-           <h1 >{data.title}</h1>
+return (
+  <>
+  {
+    Productos.map(producto => {
+      return (
+        <div className='productos' key={producto.id}>
+          <div className='producto'>
+            <div className='producto__img'>
+            <img src={producto.image} alt='' />
+            </div>
+            <div className='producto__footer'>
+             <h1>{producto.title}</h1>
          </div>
-         </div>  
-     </div>
-
-    );
+         <div className='producto__footer'>
+         <p>{producto.Description}</p>
+         </div>
+          </div>
+        </div>
+      )
+    })
+  }
+  </>
+);
 }
 
 export default ItemDetail;

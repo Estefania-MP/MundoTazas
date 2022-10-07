@@ -1,5 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import { ItemDetail } from "../ItemDetail/ItemDetail";
+import Productos from "../Productos/Productos.json";
 
 export const Item = ({info}) => {
 
@@ -20,7 +22,7 @@ return(
                  Añadir al carrito
              </button>
              <div className='vision'>
-             <Link to='/detalles' className='btn'>Ver</Link>
+             <Link to={`/detalles/${Productos.id}`} className='btn'>Ver</Link>
              <box-icon name='low-vision' color='#ffffff' animation='flashing'></box-icon>
              </div>
          </div>
