@@ -88,8 +88,9 @@ header .cart span {
 /*-----------------------PRODUCTOS ----------------------*/
 .title {
   font-size: 2rem;
-  padding: 10rem 0 0 0;
+  padding: 8rem 0 0 0;
   color: #9f8bb5;
+  text-align: center;
 }
 .productos{
   padding: 5rem 1rem;
@@ -122,23 +123,26 @@ width: 310px;
   font-size: 1.5rem;
   color: #9f8bb5;
   font-family: helvetica, sans-serif;
+  text-align: center;
 }
 .producto__footer p{
   font-weight: 700px;
   color: rgba(0, 0, 0, .555);
   text-transform: uppercase;
   font-size: 18px;
+  text-align: center;
 }
 .producto__footer .price{
   font-size: 2rem;
   color: #856E8A;
 }
 .producto .buttom{
-  width: 100%;
+  width: 200%;
   height: 45px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 1rem 3rem;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem 3rem;
+  margin-bottom: 5px;
 }
 .buttom .btn{
 border: none;
@@ -167,26 +171,60 @@ border-radius: 5px;
   color: white;
   font-weight: 700;
 }
-.butom div a:hover{
+.butom div Link:hover{
   color: white;
-}
-.vision box-icon{
-  display: grid;
-  align-items: center;
-  margin-left: 4rem;
 }
 
 .counter{
   background-color: #C6E1FF;
-  max-width: 150px;
+  max-width: 200px;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   font-size: 1.4rem;
   color: white;
   font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
-
-
+.counter .number1{
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: white;
+  border: white;
+}
+.counter .number2{
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: white;
+  border: white;
+}
+.counter .btnn{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(226, 185, 245);
+  border: white;
+  color: white;
+  width: 150px;
+  align-items: center;
+}
+.btnlink {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(226, 185, 245);
+  border: white;
+  color: white;
+  width: 950px;
+  text-align: center;
+}
 /*---------------------- MEDIA --------------------------*/
 
 @media only screen and (max-width: 600px){
