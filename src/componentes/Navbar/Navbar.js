@@ -3,9 +3,11 @@ import logotaza from '../../assets/logotaza.png';
 import { CartWidget } from "../CartWidget/CartWidget";
 import { Link, NavLink } from "react-router-dom";
 
+
 export const Navbar = () => {
     return (
         <header>
+    
             <div clasName= 'menu'>
             <box-icon name='menu-alt-right' flip='horizontal' color='#ffffff' ></box-icon>
             </div>
@@ -31,5 +33,6 @@ export const Navbar = () => {
                 </NavLink>
             </div>
         </header>
+
     )
 }

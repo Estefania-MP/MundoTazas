@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar } from "../Navbar/Navbar";
 import { Routes, Route, } from "react-router-dom";
 
+
 export const Inicio = () => {
     return (
         <>

@@ -33,7 +33,7 @@ return (
             goToCart ?
             <div className='counter' >¡Añadido!</div>
             :
-             <ItemCount initial={1} stock={10} onAdd={onAdd}/>
+             <ItemCount initial={3} stock={5} onAdd={onAdd}/>
           }
          </div>
          <Link className='btnlink' to='/cart'>

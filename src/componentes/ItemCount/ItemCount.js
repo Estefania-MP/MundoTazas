@@ -25,7 +25,7 @@ useEffect(() => {
             <span>{count}</span>
             <button className='number2' disabled={count >= stock} onClick={increase}>+</button>
             <div >
-                <button  className='btnn' disabled={stock <= 0} onClick={() => onAdd()}>añadir al carrito</button>
+                <button  className='btnn' disabled={stock <= 0} onClick={() => onAdd(count)}>añadir al carrito</button>
             </div>
             
         </div>

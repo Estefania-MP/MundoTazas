@@ -22,6 +22,10 @@ code {
   box-sizing: border-box;
 }
 
+.navBg{
+  background-color: #9f8bb5;
+}
+
 /* ------------------------ HEADER -----------------------------*/
 
 header{
@@ -223,6 +227,41 @@ border-radius: 5px;
   border: white;
   color: white;
   width: 950px;
+  text-align: center;
+}
+
+/*_--------------------- CART ---------------------------*/
+.ItemCart {
+  display: flex;
+  border-bottom: 1px solid gray;
+  max-width:  500px;
+  margin: 2rem auto;
+  padding-top: 2rem;
+}
+
+.ItemCart img {
+  width: 200px;
+  margin-right: 1rem;
+}
+.textCart {
+  font-size: 1rem;
+  color: #9f8bb5;
+  padding: 2px;
+}
+.btnCart {
+  margin: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(226, 185, 245);
+  border: white;
+  color: white;
+  width: 150px;
+  text-align: center;
+}
+.totalCart {
+  padding-top: 0;
+  font-size: 2rem;
+  color: #9f8bb5;
   text-align: center;
 }
 /*---------------------- MEDIA --------------------------*/
