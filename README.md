@@ -53,6 +53,6 @@ Mi codigo esta basado segun lo comprendido en las clases y la doc. complementari
 
 **Faltantes**😣
 Lamentablemente con el poco tiempo brindado para poder realizar la entrega del proyecto final no logre realizar 2 puntos de lo solcitado:
-- Input para email y lógica de repetir el email 2 veces
+- Lógica de repetir el email 2 veces
 - Feedback del número de orden
 Soy conciente de los items faltantes pero lamentableente por mi carga horaria laboral no pude llegar con los tiempos.
