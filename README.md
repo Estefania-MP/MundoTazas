@@ -43,7 +43,7 @@ Mi codigo esta basado segun lo comprendido en las clases y la doc. complementari
 **FinCompra**👍
 - Este componente lo añadi yo ya que por cuetiones de tiempo no pude llegar a hacer uno de los puntos del poryecto (feedback del número de orden generado en firebase) por lo que genere este componente que al dar click en finalizar compra te muestra un texto de "Gracias por la compra"
 
-**Tecnologías y librerías:**📚
+**Tecnologías y librerías**📚
 
 - Interfaz realizada con **ReactJS - Create React App**
 - Estilos con **ReactCSS**
