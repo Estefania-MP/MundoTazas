@@ -6,6 +6,8 @@ import {ItemListContainer} from "./componentes/ItemListContainer/ItemListContain
 import { ItemDetailContainer } from "./componentes/ItemDetailContainer/ItemDetailContainer";
 import { Cart } from "./componentes/Cart/Cart";
 import { CartContextProvider } from "./Context/CartContext";
+import { Checkout } from "./componentes/Checkout/Checkout";
+import { Fin } from "./componentes/FinCompra/Fin";
 import 'boxicons';
 
 
@@ -22,6 +24,8 @@ function App() {
         <Route path='/detalles' element={<ItemDetailContainer />} />
         <Route path='/detalles/:detalleId' element={<ItemDetailContainer />} />
         <Route path='/cart' element={<Cart/>} />
+        <Route path='/check' element={<Checkout/>} />
+        <Route path='/fin' element={<Fin/>} />
       </Routes>
       </CartContextProvider>
       </BrowserRouter>

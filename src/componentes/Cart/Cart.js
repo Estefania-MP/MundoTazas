@@ -1,12 +1,29 @@
 import React from 'react';
 import { Navbar } from "../Navbar/Navbar";
-import { Routes, Route, Link, } from "react-router-dom";
-import { useState } from 'react';
+import { Routes, Route, Link, NavLink, } from "react-router-dom";
 import { useCartContext } from '../../Context/CartContext';
 import { ItemCart } from '../CartItem/ItemCart';
+import { addDoc, getFirestore, collection } from 'firebase/firestore';
 
 export const Cart = () => {
-  const {cart, totalPrice} = useCartContext();
+
+//Generar la ordne de compra
+const {cart, totalPrice} = useCartContext();
+
+const order = {
+
+    items: cart.map(product => ({id: product.id, title: product.title, price: product.price, quantity: product.quantity})),
+    total: totalPrice(),
+  }
+
+//Boton de generar orden
+const handleClick = () => {
+    const db = getFirestore();
+    const ordersCollection = collection(db, 'orders');
+    addDoc(ordersCollection, order)
+    .then(({id}) => console.log(id))
+  }
+
 
   if (cart.length === 0){
     return(
@@ -32,6 +49,7 @@ export const Cart = () => {
       <p className='totalCart' >
         Total: ${totalPrice()}
       </p>
+      <NavLink to='/check' className='btnCart' onClick={handleClick} >Generar orden de compra</NavLink>
       </>
     )
 }
