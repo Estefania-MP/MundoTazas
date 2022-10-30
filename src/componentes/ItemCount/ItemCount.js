@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import { Routes, Route, Link, } from "react-router-dom";
 
 
 export const ItemCount = ({initial, stock,onAdd}) => {
@@ -32,4 +31,3 @@ useEffect(() => {
     )
 }
 
-//<button className='btnn' disabled={stock <= 0} onClick={() => onAdd(count)}>Añadir al carrito</button>

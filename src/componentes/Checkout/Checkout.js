@@ -1,34 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { Routes, Route, Link, } from "react-router-dom";
 import { Navbar } from "reactstrap";
 import { useCartContext } from "../../Context/CartContext";
 import { ItemCart } from "../CartItem/ItemCart";
-import { addDoc, getFirestore, collection } from 'firebase/firestore';
-import { Firestore } from "firebase/firestore";
-
-
 
 
 
  export const Checkout = () => {
     const {cart, totalPrice} = useCartContext();
-
-
-
-    //Confirmacion de email
-    const [email, setEmail] = useState("");
-    const [emailConfirm, setEmailConfirm] = useState("");
-
-    const onEmailChange = (event) => {
-      setEmail(event.target.value);
-    };
-    const onEmailConfirmChange = (event) => {
-      setEmailConfirm(event.target.value);
-    };
-
-
-  
-    
 
     
 return (
@@ -45,11 +24,7 @@ return (
                     </div>
                     <div className="form">
                     <label>Correo electronico  </label>
-                    <input className="input" type="email"  name="email" placeholder="Ingresa tu correo electronico" inputLabel="inputEmail" valueInput={email} onChange={onEmailChange}></input>
-                    </div>
-                    <div className="form">
-                    <label>Correo electronico  </label>
-                    <input className="input" placeholder="Repetir correo electronico" type="email"  name="email2" inputLabel="inputConfirmEmail" valueInput={emailConfirm} onChange={onEmailConfirmChange}></input>
+                    <input className="input" type="email"  name="email" placeholder="Ingresa tu correo electronico" inputLabel="inputEmail" ></input>
                     </div>
                     <div className="form">
                     <label>Celular de contacto</label>

@@ -1,14 +1,11 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { ItemCount } from "../ItemCount/ItemCount.js";
 import { ItemList } from "../ItemList/ItemList";
-import { Routes, Route, useParams} from "react-router-dom";
+import {  useParams} from "react-router-dom";
 import { getFirestore, collection, getDocs, query, where } from "firebase/firestore";
 
 
 
-
-//Estado
 export const ItemListContainer = ({}) => {
     const [data, setData] = useState([]);
 
@@ -32,7 +29,6 @@ export const ItemListContainer = ({}) => {
     }, [id])
 
 
-//Envio
   return (
       <>
       <h1 className='title'> PRODUCTOS</h1>

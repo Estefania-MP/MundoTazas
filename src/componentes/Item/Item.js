@@ -1,7 +1,5 @@
-import React, { useContext } from "react";
+import React from "react";
 import {Link} from "react-router-dom";
-import { ItemDetail } from "../ItemDetail/ItemDetail";
-import Productos from "../Productos/Productos.json";
 
 
 export const Item = ({info}) => {
