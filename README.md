@@ -10,23 +10,23 @@ Mi codigo esta basado segun lo comprendido en las clases y la doc. complementari
 
 ## Componentes Principales✍ 
 
-**Navbar:**🖱
+**Navbar**🖱
  - Logo el cual al cliquear te lleva al inicio de la web
  - Links de inicio, tazas y accesorios, para poder acceder al menu completo desde el inicio, a la seccion de solo tazas o a la seccion de solo accesorios.
  - Carrito para podes accesder al mismo.
  - Menu desplegable, el mismo aparece al llegar a un diametro de 600px, al colocar el cursor sobre el icono del menu desplegable se despliegan los link de acceso rapido (inicio, tazas, accesorios).
 
-**Inicio:**📱
+**Inicio**📱
  - Titulo para que el usuario sepa en donde esta.
  - Lista de todos los productos disponible renderizando el **ItemList**
 
-**Cart:**🛒
+**Cart**🛒
  - Titulo para que el usuario sepa en donde esta.
  - Cuanta con un if para que nos muestre si el carrito tiene o no productos:
  - Si el carrito **no tiene** productos aparece un boton para ir a comprar.
  - Si el carrito **tiene** productos se muestra el **ItemCart** cada producto con sus detalles (titulo, cantidad, precio por unidad, subtotal) y el total de la compra general, mas un boton para generar la orden de compra y un boton por producto para elimiarlo.
 
-**ItemDetailContainer:**📑
+**ItemDetailContainer**📑
 - Hooks para lograr renderizar los productos desde la base de Firebase y mostrar su detalle desde el **ItemDetail** donde se encuentra el formato y se puede visualizar la foto, titulo, precio, detalle, contador para elegir el numero de unidades a comprar el cual se trae del **ItemCount** y 2 botones, uno para añadir el producto  y otro para finalizra la compra.
 
 **ItemListContainer**🧾
