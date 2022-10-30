@@ -53,6 +53,6 @@ Mi codigo esta basado segun lo comprendido en las clases y la doc. complementari
 - Utilizacion de **Context** para el flujo de datos
 
 **Faltantes**😣
-Lamentablemente con el poco tiempo brindado para poder realizar la entrega del proyecto final y mi carga horaria laboral no logre realizar 2 puntos de lo solcitado:
+Lamentablemente con el poco tiempo brindado para poder realizar la entrega del proyecto final y mi carga horaria laboral no logre realizar 2 puntos de lo solicitado:
 - Lógica de repetir el email 2 veces
 - Feedback del número de orden
